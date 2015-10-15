@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/faxian"
+    android:id="@+id/text2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="发现"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:background="#f59129" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp" />
+    <ImageButton
+        android:id="@+id/ibu12"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/gongyijiaodian"
+        android:layout_marginLeft="150dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="20dp" />
+    <ImageButton
+        android:id="@+id/ibu13"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/renwuzhongxin"
+        android:layout_marginLeft="180dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageButton
+        android:id="@+id/ibu14"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/hezuojigou"
+        android:layout_marginLeft="200dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageButton
+        android:id="@+id/ibu15"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/aixinluntan"
+        android:layout_marginLeft="160dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <ImageButton
+        android:id="@+id/ibu16"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/wangqitupian"
+        android:layout_marginLeft="110dp"/>
+</LinearLayout>
