@@ -28,6 +28,18 @@
         </activity>
         <activity android:name=".gongyijiaodian">
         </activity>
+        <activity android:name=".renwuzhongxin">
+        </activity>
+        <activity android:name=".hezuojigou">
+        </activity>
+        <activity android:name=".aixinluntan">
+        </activity>
+        <activity android:name=".wangqitupian">
+        </activity>
+        <activity android:name=".gerenzhongxin">
+        </activity>
+        <activity android:name=".denglu">
+        </activity>
     </application>
 
 </manifest>
