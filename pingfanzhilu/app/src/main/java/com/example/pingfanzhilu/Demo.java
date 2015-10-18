@@ -3,21 +3,31 @@ package com.example.pingfanzhilu;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.provider.CalendarContract;
+import android.widget.Adapter;
 import android.widget.ListView;
+
+
+import com.example.pingfanzhilu.R;
 
 import java.util.ArrayList;
 
+import DB.Event;
+
 /**
- * Created by 杨~ on 2015/10/14.
+ * Created by Hua on 2015/10/18.
  */
-public class aixingou extends Activity{
+public class Demo extends Activity {
+
     private Context mContext;
     private ListView listView;
     private ArrayList<Appinfos> appInfos;
     private AppAdapter appAdapter;
-    public void onCreate(Bundle savedInstanceState) {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aixingouactivity);
+        setContentView(R.layout.aihuodong1);
         getComponenets();
     }
 
