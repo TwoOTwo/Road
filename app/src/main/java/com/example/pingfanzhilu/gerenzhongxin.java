@@ -15,6 +15,7 @@ public class gerenzhongxin extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gerenzhongxinactivity);
         Button denglu = (Button) findViewById(R.id.button);
+        Button zhuce = (Button)findViewById(R.id.button2);
         denglu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,5 +23,15 @@ public class gerenzhongxin extends Activity {
                 startActivity(intent12);
             }
         });
+
+
+        zhuce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent13 = new Intent(gerenzhongxin.this,denglu.class);
+                startActivity(intent13);
+            }
+        });
     }
+
 }
