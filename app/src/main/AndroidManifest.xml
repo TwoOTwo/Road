@@ -2,12 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pingfanzhilu" >
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,51 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".zhiyuanzhe" >
+        <activity android:name=".zhiyuanzhe">
         </activity>
-
-        <activity android:name=".aixinjuan" >
+        <activity android:name=".aixinjuan">
         </activity>
-
-        <activity android:name=".aixingou" >
+        <activity android:name=".aixingou">
         </activity>
-
-        <activity android:name=".aihuodong" >
+        <activity android:name=".aihuodong">
         </activity>
-
-        <activity android:name=".aiqiuzhu" >
+        <activity android:name=".aiqiuzhu">
         </activity>
-
-        <activity android:name=".gongyijiaodian" >
+        <activity android:name=".gongyijiaodian">
         </activity>
-
-        <activity android:name=".renwuzhongxin" >
+        <activity android:name=".renwuzhongxin">
         </activity>
-
-        <activity android:name=".hezuojigou" >
+        <activity android:name=".hezuojigou">
         </activity>
-
-        <activity android:name=".aixinluntan" >
+        <activity android:name=".aixinluntan">
         </activity>
-
-        <activity android:name=".wangqitupian" >
+        <activity android:name=".wangqitupian">
         </activity>
-
-        <activity android:name=".gerenzhongxin" >
+        <activity android:name=".gerenzhongxin">
         </activity>
-
-        <activity android:name=".denglu" >
+        <activity android:name=".denglu">
         </activity>
-
-        <activity android:name=".Demo" >
-        </activity>
-
-
     </application>
 
 </manifest>
-
-
-
-

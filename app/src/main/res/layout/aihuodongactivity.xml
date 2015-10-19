@@ -1,65 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#484E61" >
+        android:layout_height="40dp">
+        <com.example.pingfanzhilu.dingbulan
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.pingfanzhilu.dingbulan>
         <TextView
-            android:id="@+id/thing1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textColor="#fff"
-            android:textSize="24sp" />
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="爱活动"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            />
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#27A5F9" >
-        <TextView
-            android:id="@+id/thing2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:textColor="#FFF"
-            android:textSize="18sp" />
 
-        <LinearLayout
-            android:id="@+id/event_info_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="vertical" >
-            <TextView
-                android:id="@+id/thing3"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:textColor="#FFF"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="~"
-                    android:textColor="#FFF"
-                    android:textSize="40sp" />
-
-            </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
-</RelativeLayout>
+</LinearLayout>

@@ -100,7 +100,7 @@ public class MainActivity extends Activity {
             ImageButton aihuodong = (ImageButton)findViewById(R.id.ibu4);
             aihuodong.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent4 = new Intent(MainActivity.this, Demo.class);
+                    Intent intent4 = new Intent(MainActivity.this, aihuodong.class);
                     startActivity(intent4);
                 }
             });
