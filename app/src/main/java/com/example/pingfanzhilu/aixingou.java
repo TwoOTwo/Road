@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TabHost;
 
 import java.util.ArrayList;
 
@@ -11,6 +12,7 @@ import java.util.ArrayList;
  * Created by 杨~ on 2015/10/14.
  */
 public class aixingou extends Activity{
+
     private Context mContext;
     private ListView listView;
     private ArrayList<Appinfos> appInfos;
@@ -21,9 +23,11 @@ public class aixingou extends Activity{
         getComponenets();
     }
 
+
     /**
      * componenet
      */
+
     public void getComponenets(){
         this.mContext = this;
         listView = (ListView) findViewById(R.id.listView);
@@ -33,9 +37,7 @@ public class aixingou extends Activity{
         listView.setAdapter(appAdapter);
     }
 
-    /**
-     * load datas
-     */
+
     public void loadDatas(){
         for (int i = 0; i < 10; i++) {
             Appinfos ai = new Appinfos();
@@ -58,4 +60,5 @@ public class aixingou extends Activity{
             appInfos.add(ai);
         }
     }
+
 }

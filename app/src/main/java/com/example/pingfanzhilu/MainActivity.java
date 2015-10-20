@@ -93,7 +93,7 @@ public class MainActivity extends Activity {
             ImageButton aixingou = (ImageButton)findViewById(R.id.ibu3);
             aixingou.setOnClickListener(new View.OnClickListener() {
                  public void onClick(View v) {
-                     Intent intent3 = new Intent(MainActivity.this, aixingou.class);
+                     Intent intent3 = new Intent(MainActivity.this, HelloTabHost.class);
                      startActivity(intent3);
                  }
              });

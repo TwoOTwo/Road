@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
 
     <application
         android:allowBackup="true"
@@ -61,6 +63,9 @@
         </activity>
 
         <activity android:name=".Demo" >
+        </activity>
+
+        <activity android:name=".HelloTabHost" >
         </activity>
 
 
