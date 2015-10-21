@@ -161,14 +161,7 @@ public class MainActivity extends Activity {
                             Toast.LENGTH_SHORT).show();
                 }
             });
-            Button sousuo = (Button) findViewById(R.id.bu1);
-            sousuo.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "你好，没完善此功能",
-                            Toast.LENGTH_SHORT).show();
-                }
-            });
+
             ImageButton gerenzhongxin = (ImageButton)findViewById(R.id.ibu11);
             gerenzhongxin.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
