@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.StringBufferInputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -48,7 +47,7 @@ public class Utility
                     String[] array = c.split("\\|");
                     User user = new User();
                     user.setAccount(array[0]);
-                    user.setUsername(array[1]);
+                    user.setPassword(array[1]);
                     user.setId(id);
 // 将解析出来的数据存储到User表
                     welfareDB.saveUser(user);

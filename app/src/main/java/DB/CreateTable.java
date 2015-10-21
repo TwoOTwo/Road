@@ -11,10 +11,10 @@ public class CreateTable extends SQLiteOpenHelper
 {
     public static final String Create_USER ="create table USER("+"id integer primary key autoincrement,"
             +"account text,"
-            +"username text";
+            +"password text)";
     public static final String Create_Welfare ="create table Event("+"id integer primary key autoincrement,"
             +"Thing text,"
-            +"Address text";
+            +"Address text)";
 
 
     public CreateTable(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -25,7 +25,7 @@ public class CreateTable extends SQLiteOpenHelper
     public void onCreate(SQLiteDatabase db)
     {
         db.execSQL(Create_USER);
-        db.execSQL(Create_Welfare);
+//        db.execSQL(Create_Welfare);
     }
 
 

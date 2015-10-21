@@ -3,17 +3,16 @@ package DB;
 public class User
 {
     private int id;
-    private String username;
     private String account;
+    private String password;
 
-
-    public int getId()
+   public int getId()
     {
         return id;
     }
-    public String getUsername()
+    public String getPassword()
     {
-        return username;
+        return password;
     }
     public String getAccount()
     {
@@ -25,8 +24,8 @@ public class User
         this.id = id;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setPassword(String password) {
+        this.password =password;
     }
 
     public void setAccount(String account) {

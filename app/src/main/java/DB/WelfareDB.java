@@ -32,8 +32,8 @@ public class WelfareDB {
         if (user != null) {
             ContentValues values = new ContentValues();
             values.put("account", user.getAccount());
-            values.put("username", user.getUsername());
-            db.insert("User", null, values);
+            values.put("password", user.getPassword());
+            db.insert("USER", null, values);
         }
     }
 
@@ -45,7 +45,7 @@ public class WelfareDB {
                 User user = new User();
                 user.setId(cursor.getColumnIndex("id"));
                 user.setAccount(cursor.getString(cursor.getColumnIndex("account")));
-                user.setUsername(cursor.getString(cursor.getColumnIndex("username")));
+                user.setPassword(cursor.getString(cursor.getColumnIndex("password")));
                 list.add(user);
             } while (cursor.moveToNext());
         return list;
