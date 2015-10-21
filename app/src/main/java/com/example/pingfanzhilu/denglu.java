@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.List;
 
 import DB.User;
 import DB.WelfareDB;
+import IMSI.PhoneInfo;
 
 
 public class denglu extends Activity {
@@ -19,15 +21,18 @@ public class denglu extends Activity {
     private EditText editText2;
     private List<User> userList;
     private Button button;
+    private TextView textView;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dengluactivity);
         editText1 = (EditText)findViewById(R.id.editText);
         editText2 = (EditText)findViewById(R.id.editText2);
-
+         textView = (TextView)findViewById(R.id.textView3);
          button = (Button)findViewById(R.id.button);
          welfareDB = WelfareDB.getInstance(this);
+
+
          button.setOnClickListener(new View.OnClickListener()
         {
            @Override
@@ -54,7 +59,15 @@ public class denglu extends Activity {
             }
         });
 
-
+         textView.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 PhoneInfo phoneInfo = new PhoneInfo(denglu.this);
+                // phoneInfo.getNativePhoneNumber();
+                 editText1.setText(phoneInfo.getNativePhoneNumber());
+//                 editText1.setText("1234");
+             }
+         });
 
     }
 }
