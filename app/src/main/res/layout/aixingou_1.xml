@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="爱行动"
+            android:text="爱心购"
             android:gravity="center"
             android:textColor="#ffffff"
             android:textSize="24sp"
@@ -47,15 +47,23 @@
                 <LinearLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
 
-                    <TextView
-                        android:id="@+id/listView"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="123" />
-
+                    <EditText
+                        android:id="@+id/widget34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EditText"
+                        android:textSize="18sp">
+                    </EditText>
+                　　<Button
+                            android:id="@+id/widget30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Button">
+                　  </Button>
 
 
                 </LinearLayout>
@@ -66,11 +74,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
 
-                    <ListView
-                        android:id="@+id/listView2"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        />
+                    <AnalogClock
+                        android:id="@+id/widget36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </AnalogClock>
 
 
                 </LinearLayout>
@@ -81,10 +89,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
 
-                    <ListView
-                        android:id="@+id/listView3"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
+                    <com.example.pingfanzhilu.SlideShowView
+                        android:id="@+id/slideshowView2"
+                        android:layout_width="335dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
                         />
 
                 </LinearLayout>
@@ -93,12 +102,14 @@
                 <LinearLayout
                     android:id="@+id/tab4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                    <ListView
-                        android:id="@+id/listView4"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
+                    <com.example.pingfanzhilu.SlideShowView
+                        android:id="@+id/slideshowView"
+                        android:layout_width="335dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
                         />
 
 
