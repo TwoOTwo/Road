@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -13,23 +14,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Search extends Activity {
+public class Search extends Activity
+{
     private EditText editText;
-    private Button submit;
+    private Button submit1;
     private WebView webView;
     private TextView tips;
     private WebSettings webSettings;
     private Handler handler = new Handler();
 
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sousuoactivity);
+        setContentView(R.layout.sousuoactivity1);
 
-        editText = (EditText)findViewById(R.id.editText);
-        tips = (TextView)findViewById(R.id.tips);
-        submit = (Button)findViewById(R.id.submit);
-        webView = (WebView)findViewById(R.id.toutput);
+        editText = (EditText) findViewById(R.id.editText);
+        tips = (TextView) findViewById(R.id.tips);
+        submit1 = (Button) findViewById(R.id.submit);
+        webView = (WebView) findViewById(R.id.toutput);
+
         webSettings = webView.getSettings();
         webSettings.setSaveFormData(false);
         webSettings.setSavePassword(false);
@@ -41,23 +43,26 @@ public class Search extends Activity {
                 return true;
             }
         });
-        submit.setOnClickListener(new View.OnClickListener() {
+
+
+        submit1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                if(editText.getText().toString().equals(""))
-                {
-                    Toast.makeText(Search.this,"请输入查询的词",Toast.LENGTH_SHORT);
+                Toast.makeText(Search.this, "aaaaaaaaaaaa", Toast.LENGTH_SHORT).show();
+                if (editText.getText().toString().length() == 0) {
+                    Toast.makeText(Search.this, "请输入查询的词", Toast.LENGTH_SHORT).show();
                     return;
-                }
-                tips.setVisibility(TextView.VISIBLE);
-                webView.setVisibility(WebView.VISIBLE);
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        webView.loadUrl("http://www.baike.com/wiki/"+editText.getText().toString());
-                    }
-                });
+                } else {
+                    tips.setVisibility(TextView.VISIBLE);
+                    webView.setVisibility(WebView.VISIBLE);
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            webView.loadUrl("http://www.baike.com/wiki/" + editText.getText().toString());
+                        }
+                    });
 
+                }
             }
         });
     }
