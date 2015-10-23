@@ -72,7 +72,9 @@
 
         <activity android:name=".hezuojigou$Search" >
         </activity>
-
+        
+        <activity android:name=".zhuce">
+        </activity>
 
     </application>
 

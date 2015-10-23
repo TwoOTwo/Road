@@ -41,8 +41,8 @@ public class gerenzhongxin extends Activity {
                 user.setPassword("1234");
                           // userList.add(user);
                           welfareDB.saveUser(user);
-                //Intent intent13 = new Intent(gerenzhongxin.this,denglu.class);
-               // startActivity(intent13);
+                Intent intent13 = new Intent(gerenzhongxin.this,zhuce.class);
+                startActivity(intent13);
             }
         });
     }
