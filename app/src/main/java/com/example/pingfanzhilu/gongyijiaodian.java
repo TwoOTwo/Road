@@ -5,6 +5,10 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.example.pingfanzhilu.Appinfos;
+import com.example.pingfanzhilu.R;
+import com.example.pingfanzhilu.AppAdapter;
+
 import java.util.ArrayList;
 
 /**

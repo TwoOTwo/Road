@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.TabHost;
 
 import java.util.ArrayList;
 

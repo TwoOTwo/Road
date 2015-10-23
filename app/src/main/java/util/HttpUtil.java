@@ -1,4 +1,4 @@
-package DB;
+package util;
 
 
 import java.io.BufferedReader;

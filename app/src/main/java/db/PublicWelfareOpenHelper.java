@@ -1,4 +1,4 @@
-package DB;
+package db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,17 +7,23 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Hua on 2015/10/13.
  */
-public class CreateTable extends SQLiteOpenHelper
+public class PublicWelfareOpenHelper extends SQLiteOpenHelper
 {
     public static final String Create_USER ="create table USER("+"id integer primary key autoincrement,"
             +"account text,"
-            +"password text)";
+            +"password text,"
+            +"phonenumber text,"
+            +"integral integer,"
+            +"thelength integer,"
+            +"welfareeventId integer)";
     public static final String Create_Welfare ="create table Event("+"id integer primary key autoincrement,"
-            +"Thing text,"
+            +"publicevent text,"
             +"Address text)";
+    public static final  String Create_Goods="create table Goods("+"id integer primary key autoincrement,"
+            +"goodsname text,"
+            +"price integer)";
 
-
-    public CreateTable(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public PublicWelfareOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
@@ -26,6 +32,7 @@ public class CreateTable extends SQLiteOpenHelper
     {
         db.execSQL(Create_USER);
 //        db.execSQL(Create_Welfare);
+//        db.execSQL(Create_Goods);
     }
 
 

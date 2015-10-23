@@ -7,6 +7,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.pingfanzhilu.R;
+import com.example.pingfanzhilu.Appinfos;
+
 /**
  * Created by Hua on 2015/10/18.
  */

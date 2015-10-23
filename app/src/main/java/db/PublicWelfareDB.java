@@ -1,4 +1,4 @@
-package DB;
+package db;
 
 
 import android.content.ContentValues;
@@ -9,21 +9,24 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WelfareDB {
+import model.Event;
+import model.User;
+
+public class PublicWelfareDB {
     public static final String DB_name = "welfare";
     public static final int VERSION = 1;
-    private static WelfareDB welfareDB;
+    private static PublicWelfareDB welfareDB;
     private static SQLiteDatabase db;
 
 
-    private WelfareDB(Context context) {
-        CreateTable createTable = new CreateTable(context, DB_name, null, VERSION);
+    private PublicWelfareDB(Context context) {
+        PublicWelfareOpenHelper createTable = new PublicWelfareOpenHelper(context, DB_name, null, VERSION);
         db = createTable.getWritableDatabase();
     }
 
-    public synchronized static WelfareDB getInstance(Context context) {
+    public synchronized static PublicWelfareDB getInstance(Context context) {
         if (welfareDB == null) {
-            welfareDB = new WelfareDB(context);
+            welfareDB = new PublicWelfareDB(context);
         }
         return welfareDB;
     }

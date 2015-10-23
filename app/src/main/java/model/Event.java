@@ -1,4 +1,4 @@
-package DB;
+package model;
 
 
 public class Event

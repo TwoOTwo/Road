@@ -1,4 +1,4 @@
-package DB;
+package util;
 
 /**
  * Created by Hua on 2015/10/13.

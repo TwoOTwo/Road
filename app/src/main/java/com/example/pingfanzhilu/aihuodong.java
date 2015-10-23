@@ -6,9 +6,9 @@ import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-/**
- * Created by 杨~ on 2015/10/14.
- */
+import com.example.pingfanzhilu.R;
+
+
 public class aihuodong extends Activity {
     private WebView webview;
     public void onCreate(Bundle savedInstanceState) {

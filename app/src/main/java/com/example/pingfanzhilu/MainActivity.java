@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -142,14 +143,14 @@ public class MainActivity extends Activity {
             zhiyuanzhe.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent1 = new Intent(MainActivity.this, zhiyuanzhe.class);
+                    Intent intent1 = new Intent(MainActivity.this, MainActivity.zhiyuanzhe.class);
                     startActivity(intent1);
                 }
             });
             ImageButton aixinjuan = (ImageButton) findViewById(R.id.ibu2);
             aixinjuan.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent2 = new Intent(MainActivity.this, aixinjuan.class);
+                    Intent intent2 = new Intent(MainActivity.this, com.example.pingfanzhilu.aixinjuan.class);
                     startActivity(intent2);
                 }
             });
@@ -163,14 +164,14 @@ public class MainActivity extends Activity {
             ImageButton aihuodong = (ImageButton) findViewById(R.id.ibu4);
             aihuodong.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent4 = new Intent(MainActivity.this, aihuodong.class);
+                    Intent intent4 = new Intent(MainActivity.this, com.example.pingfanzhilu.aihuodong.class);
                     startActivity(intent4);
                 }
             });
             ImageButton aiqiuzhu = (ImageButton) findViewById(R.id.ibu5);
             aiqiuzhu.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent5 = new Intent(MainActivity.this, aiqiuzhu.class);
+                    Intent intent5 = new Intent(MainActivity.this, com.example.pingfanzhilu.aiqiuzhu.class);
                     startActivity(intent5);
                 }
             });
@@ -184,35 +185,35 @@ public class MainActivity extends Activity {
             ImageButton gongyijiaodian = (ImageButton) findViewById(R.id.ibu12);
             gongyijiaodian.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent6 = new Intent(MainActivity.this, gongyijiaodian.class);
+                    Intent intent6 = new Intent(MainActivity.this, com.example.pingfanzhilu.gongyijiaodian.class);
                     startActivity(intent6);
                 }
             });
             ImageButton renwuzhongxin = (ImageButton) findViewById(R.id.ibu13);
             renwuzhongxin.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent7 = new Intent(MainActivity.this, renwuzhongxin.class);
+                    Intent intent7 = new Intent(MainActivity.this, hezuojigou.renwuzhongxin.class);
                     startActivity(intent7);
                 }
             });
             ImageButton hezuojigou = (ImageButton) findViewById(R.id.ibu14);
             hezuojigou.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent8 = new Intent(MainActivity.this, hezuojigou.class);
+                    Intent intent8 = new Intent(MainActivity.this, com.example.pingfanzhilu.hezuojigou.class);
                     startActivity(intent8);
                 }
             });
             ImageButton aixinluntan = (ImageButton) findViewById(R.id.ibu15);
             aixinluntan.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent9 = new Intent(MainActivity.this, aixinluntan.class);
+                    Intent intent9 = new Intent(MainActivity.this, com.example.pingfanzhilu.aixinluntan.class);
                     startActivity(intent9);
                 }
             });
             ImageButton wangqitupian = (ImageButton) findViewById(R.id.ibu16);
             wangqitupian.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent10 = new Intent(MainActivity.this, wangqitupian.class);
+                    Intent intent10 = new Intent(MainActivity.this, com.example.pingfanzhilu.hezuojigou.wangqitupian.class);
                     startActivity(intent10);
                 }
             });
@@ -230,7 +231,7 @@ public class MainActivity extends Activity {
             {
                 public void onClick(View v)
                 {
-                    Intent intent11 = new Intent(MainActivity.this, gerenzhongxin.class);
+                    Intent intent11 = new Intent(MainActivity.this, com.example.pingfanzhilu.gerenzhongxin.class);
                     startActivity(intent11);
                 }
             });
@@ -239,4 +240,33 @@ public class MainActivity extends Activity {
             
         }
     };
+
+    public static class zhiyuanzhe extends Activity {
+        private WebView webview;
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.zhiyuanzheactivity);
+
+            webview =(WebView)findViewById(R.id.webview1);
+            webview.getSettings().setJavaScriptEnabled(true);
+            webview.loadUrl("http://www.xingongyi.org/");
+            webview.setWebViewClient(new HelloWebViewClient());
+        }
+        public boolean onKeyDown(int keyCode,KeyEvent event){
+            if((keyCode == KeyEvent.KEYCODE_BACK)&&webview.canGoBack()){
+                webview.goBack();
+                return true;
+            }
+            return false;
+        }
+
+        private class HelloWebViewClient extends WebViewClient {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view,String url){
+                view.loadUrl(url);
+                return true;
+            }
+        }
+
+    }
 }

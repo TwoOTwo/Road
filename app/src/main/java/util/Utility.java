@@ -1,4 +1,4 @@
-package DB;
+package util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,13 +12,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import db.PublicWelfareDB;
+import model.Event;
+import model.User;
+
 /**
  * Created by Hua on 2015/10/14.
  */
 //解析和处理服务器返回公益事件数据
 public class Utility
 {
-    public synchronized static boolean handleWelfareResponse(WelfareDB welfareDB, String response)
+    public synchronized static boolean handleWelfareResponse(PublicWelfareDB welfareDB, String response)
     {
         if(!TextUtils.isEmpty(response))
         {
@@ -39,7 +43,7 @@ public class Utility
     return false;
     }
 
-    public static boolean handleCountiesResponse( WelfareDB welfareDB, String response, int id) {
+    public static boolean handleCountiesResponse( PublicWelfareDB welfareDB, String response, int id) {
         if (!TextUtils.isEmpty(response)) {
             String[] allUser = response.split(",");
             if (allUser != null && allUser.length > 0) {

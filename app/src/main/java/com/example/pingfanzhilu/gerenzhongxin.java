@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import DB.User;
-import DB.WelfareDB;
+import model.User;
+import db.PublicWelfareDB;
 
 /**
  * Created by 杨~ on 2015/10/15.
  */
 public class gerenzhongxin extends Activity {
-    private WelfareDB welfareDB;
+    private PublicWelfareDB welfareDB;
     private User user;
 
    // private List<User> userList;
@@ -22,7 +22,7 @@ public class gerenzhongxin extends Activity {
         setContentView(R.layout.gerenzhongxinactivity);
         Button denglu = (Button) findViewById(R.id.button);
         Button zhuce = (Button)findViewById(R.id.button2);
-       welfareDB = WelfareDB.getInstance(this);
+       welfareDB = PublicWelfareDB.getInstance(this);
         denglu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

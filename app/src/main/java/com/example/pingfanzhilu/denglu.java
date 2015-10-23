@@ -10,13 +10,13 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import DB.User;
-import DB.WelfareDB;
+import model.User;
+import db.PublicWelfareDB;
 import IMSI.PhoneInfo;
 
 
 public class denglu extends Activity {
-    private WelfareDB welfareDB;
+    private PublicWelfareDB welfareDB;
     private EditText editText1;
     private EditText editText2;
     private List<User> userList;
@@ -30,7 +30,7 @@ public class denglu extends Activity {
         editText2 = (EditText)findViewById(R.id.editText2);
          textView = (TextView)findViewById(R.id.textView3);
          button = (Button)findViewById(R.id.button);
-         welfareDB = WelfareDB.getInstance(this);
+         welfareDB = PublicWelfareDB.getInstance(this);
 
 
          button.setOnClickListener(new View.OnClickListener()
@@ -38,7 +38,7 @@ public class denglu extends Activity {
            @Override
            public void onClick(View v)
            {
-               userList = WelfareDB.loadUser();
+               userList = PublicWelfareDB.loadUser();
                if(userList.size()>0)
                {
                    String account1= editText1.getText().toString();

@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".zhiyuanzhe" >
+        <activity android:name=".MainActivity$zhiyuanzhe" >
         </activity>
 
         <activity android:name=".aixinjuan" >
@@ -46,7 +46,7 @@
         <activity android:name=".gongyijiaodian" >
         </activity>
 
-        <activity android:name=".renwuzhongxin" >
+        <activity android:name=".hezuojigou$renwuzhongxin" >
         </activity>
 
         <activity android:name=".hezuojigou" >
@@ -55,7 +55,7 @@
         <activity android:name=".aixinluntan" >
         </activity>
 
-        <activity android:name=".wangqitupian" >
+        <activity android:name=".hezuojigou$wangqitupian" >
         </activity>
 
         <activity android:name=".gerenzhongxin" >
@@ -70,7 +70,7 @@
         <activity android:name=".HelloTabHost" >
         </activity>
 
-        <activity android:name=".Search" >
+        <activity android:name=".hezuojigou$Search" >
         </activity>
 
 

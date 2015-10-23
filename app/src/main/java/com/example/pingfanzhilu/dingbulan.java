@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.pingfanzhilu.R;
+
 /**
  * Created by 杨~ on 2015/10/5.
  */
