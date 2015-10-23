@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="爱行动"
+            android:text="爱求助"
             android:gravity="center"
             android:textColor="#ffffff"
             android:textSize="24sp"
