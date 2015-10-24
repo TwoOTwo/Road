@@ -89,7 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
 
-                    <com.example.pingfanzhilu.activity.HelloTabHost.SlideShowView
+                    <com.example.pingfanzhilu.SlideShowView
                         android:id="@+id/slideshowView2"
                         android:layout_width="335dp"
                         android:layout_height="120dp"
@@ -105,7 +105,7 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <com.example.pingfanzhilu.activity.HelloTabHost.SlideShowView
+                    <com.example.pingfanzhilu.SlideShowView
                         android:id="@+id/slideshowView"
                         android:layout_width="335dp"
                         android:layout_height="120dp"
