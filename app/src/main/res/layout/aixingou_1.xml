@@ -87,7 +87,8 @@
                 <LinearLayout
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                     <com.example.pingfanzhilu.SlideShowView
                         android:id="@+id/slideshowView2"
@@ -95,6 +96,13 @@
                         android:layout_height="120dp"
                         android:layout_centerHorizontal="true"
                         />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView3"
+                        android:layout_gravity="center_horizontal" />
+
 
                 </LinearLayout>
 

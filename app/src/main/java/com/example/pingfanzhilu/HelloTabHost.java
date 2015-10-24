@@ -2,29 +2,17 @@ package com.example.pingfanzhilu;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TabHost;
 
-import com.example.pingfanzhilu.R;
-
 import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 public class HelloTabHost extends Activity {
+    private Context context;
+    private ListView listView;
+    private ArrayList<Appinfos> appInfos;
+    private AppAdapter appAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +22,9 @@ public class HelloTabHost extends Activity {
         TabHost th=(TabHost)findViewById(R.id.tabhost);
         th.setup();            //初始化TabHost容器
 
+        getComponenets();
+
+
         //在TabHost创建标签，然后设置：标题／图标／标签页布局
         th.addTab(th.newTabSpec("tab1").setIndicator("推荐商品",this.getResources().getDrawable(R.drawable.fanhui2)).setContent(R.id.tab1));
         th.addTab(th.newTabSpec("tab2").setIndicator("家用电器",null).setContent(R.id.tab2));
@@ -42,6 +33,38 @@ public class HelloTabHost extends Activity {
 
         //上面的null可以为getResources().getDrawable(R.drawable.图片名)设置图标
 
+    }
+    public void getComponenets(){
+        this.context = this;
+        listView = (ListView) findViewById(R.id.listView3);
+        appInfos = new ArrayList<Appinfos>();
+        loadDatas();
+        appAdapter = new AppAdapter(context,appInfos);
+        listView.setAdapter(appAdapter);
+    }
+
+
+    public void loadDatas(){
+        for (int i = 0; i < 10; i++) {
+            Appinfos ai = new Appinfos();
+            if(i == 1){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 2){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 3){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 4){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 5){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 6){
+                ai.setImages(R.drawable.zhuye1);
+            }
+            ai.setText_id("001");
+            ai.setText_infos("这是我们都需要注意的...");
+            ai.setText_url("http://jiangshide.com");
+            appInfos.add(ai);
+        }
     }
 
     /**
