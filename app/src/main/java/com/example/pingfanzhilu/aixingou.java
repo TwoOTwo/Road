@@ -7,9 +7,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by 杨~ on 2015/10/14.
- */
+
 public class aixingou extends Activity{
 
     private Context mContext;

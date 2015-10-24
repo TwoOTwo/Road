@@ -27,24 +27,34 @@
 
         <FrameLayout
             android:layout_width="180dp"
-            android:layout_height="50dp"
+            android:layout_height="80dp"
             android:layout_gravity="left|bottom"
-            android:background="#ffffff">
+            android:background="#ffffff"
+            android:layout_marginTop="0dp">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="36dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="爱心积分"
                 android:id="@+id/textView"
                 android:layout_gravity="center"
                 android:textSize="20dp"
                 android:drawableLeft="@drawable/jifen4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="   "
+                android:id="@+id/jifen"
+                android:layout_gravity="center_horizontal|bottom" />
+
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="80dp"
             android:layout_gravity="right|bottom"
             android:layout_marginLeft="180dp"
             android:background="#ffffff">
@@ -58,6 +68,14 @@
                 android:layout_gravity="center"
                 android:textSize="20dp"
                 android:drawableLeft="@drawable/fuwu1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" "
+                android:id="@+id/time"
+                android:layout_gravity="center_horizontal|bottom" />
         </FrameLayout>
 
         <RelativeLayout

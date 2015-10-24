@@ -22,6 +22,7 @@ public class denglu extends Activity {
     private List<User> userList;
     private Button button;
     private TextView textView;
+    private TextView zhuce;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class denglu extends Activity {
         editText1 = (EditText)findViewById(R.id.editText);
         editText2 = (EditText)findViewById(R.id.editText2);
          textView = (TextView)findViewById(R.id.textView3);
+         zhuce =(TextView)findViewById(R.id.textView2);
          button = (Button)findViewById(R.id.button);
          welfareDB = PublicWelfareDB.getInstance(this);
 
@@ -50,6 +52,7 @@ public class denglu extends Activity {
                        {
 
                            Intent intent13 = new Intent(denglu.this, gerenzhongxin.class);
+                           intent13.putExtra("user_data", user);
                            startActivity(intent13);
                       }
 
@@ -68,6 +71,13 @@ public class denglu extends Activity {
 //                 editText1.setText("1234");
              }
          });
+        zhuce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(denglu.this,zhuce.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
