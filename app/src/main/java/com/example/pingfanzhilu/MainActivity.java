@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -143,7 +142,7 @@ public class MainActivity extends Activity {
             zhiyuanzhe.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent1 = new Intent(MainActivity.this, MainActivity.zhiyuanzhe.class);
+                    Intent intent1 = new Intent(MainActivity.this, zhiyuanzhe.class);
                     startActivity(intent1);
                 }
             });
@@ -241,32 +240,32 @@ public class MainActivity extends Activity {
         }
     };
 
-    public static class zhiyuanzhe extends Activity {
-        private WebView webview;
-        public void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.zhiyuanzheactivity);
+//    public static class zhiyuanzhe extends Activity {
+//        private WebView webview;
+//        public void onCreate(Bundle savedInstanceState) {
+//            super.onCreate(savedInstanceState);
+//            setContentView(R.layout.zhiyuanzheactivity);
+//
+//            webview =(WebView)findViewById(R.id.webview1);
+//            webview.getSettings().setJavaScriptEnabled(true);
+//            webview.loadUrl("http://www.xingongyi.org/");
+//            webview.setWebViewClient(new HelloWebViewClient());
+//        }
+//        public boolean onKeyDown(int keyCode,KeyEvent event){
+//            if((keyCode == KeyEvent.KEYCODE_BACK)&&webview.canGoBack()){
+//                webview.goBack();
+//                return true;
+//            }
+//            return false;
+//        }
+//
+//        private class HelloWebViewClient extends WebViewClient {
+//            @Override
+//            public boolean shouldOverrideUrlLoading(WebView view,String url){
+//                view.loadUrl(url);
+//                return true;
+//            }
+//        }
 
-            webview =(WebView)findViewById(R.id.webview1);
-            webview.getSettings().setJavaScriptEnabled(true);
-            webview.loadUrl("http://www.xingongyi.org/");
-            webview.setWebViewClient(new HelloWebViewClient());
-        }
-        public boolean onKeyDown(int keyCode,KeyEvent event){
-            if((keyCode == KeyEvent.KEYCODE_BACK)&&webview.canGoBack()){
-                webview.goBack();
-                return true;
-            }
-            return false;
-        }
-
-        private class HelloWebViewClient extends WebViewClient {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view,String url){
-                view.loadUrl(url);
-                return true;
-            }
-        }
-
-    }
+ //   }
 }

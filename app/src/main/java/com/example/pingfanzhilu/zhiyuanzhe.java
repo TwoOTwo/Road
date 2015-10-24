@@ -8,14 +8,14 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 
-public class aixinjuan extends Activity {
-    private Context mContext;
+public class zhiyuanzhe extends Activity {
+    private Context context;
     private ListView listView;
     private ArrayList<Appinfos> appInfos;
     private AppAdapter appAdapter;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aixinjuanactivity);
+        setContentView(R.layout.zhiyuanzheactivity);
         getComponenets();
     }
 
@@ -23,17 +23,15 @@ public class aixinjuan extends Activity {
      * componenet
      */
     public void getComponenets(){
-        this.mContext = this;
-        listView = (ListView) findViewById(R.id.listView);
+        this.context = this;
+        listView = (ListView) findViewById(R.id.listView2);
         appInfos = new ArrayList<Appinfos>();
         loadDatas();
-        appAdapter = new AppAdapter(mContext,appInfos);
+        appAdapter = new AppAdapter(context,appInfos);
         listView.setAdapter(appAdapter);
     }
 
-    /**
-     * load datas
-     */
+
     public void loadDatas(){
         for (int i = 0; i < 10; i++) {
             Appinfos ai = new Appinfos();
