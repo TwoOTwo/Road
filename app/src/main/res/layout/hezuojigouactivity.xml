@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
@@ -17,4 +20,160 @@
             android:textSize="24sp"
             />
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="right">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+       //第一组
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+        </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/yangcheng"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/zhonghuacishanzonghui"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/zhongguocishanjiuzhu"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+            //第二组
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/qufucishan"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/xinyang"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/chengdugongyizuzhifuwuyuan"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            //第三组
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/qingnianzhiyuanzhexiehui"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/lianyungangcishan"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/zhongguohongshizihui"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+            //第四组
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/huanyuxiwang"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/zhonguoqingshaonianfazhan"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/chengdu"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

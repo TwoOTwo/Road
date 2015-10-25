@@ -58,7 +58,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_marginTop="15dp"
-        android:drawableLeft="@drawable/mima5"
+        android:drawableLeft="@drawable/shouji"
         android:hint="手机号码"
         android:gravity="center"
         android:layout_gravity="center"/>
