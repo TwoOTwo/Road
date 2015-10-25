@@ -2,69 +2,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/zhuce"
+    android:background="#ffffc0"
     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.pingfanzhilu.dingbulan
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.pingfanzhilu.dingbulan>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="注册"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="40dp"
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:text="账号"
-            android:layout_marginLeft="50dp"
-            android:textColor="#ffffff"
-            android:textSize="24sp"/>
-        <EditText
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:background="#ffffff"
-            android:id="@+id/account" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="40dp"
-            android:text="密码"
-            android:layout_marginLeft="50dp"
-            android:textColor="#ffffff"
-            android:textSize="24sp"/>
-        <EditText
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:background="#ffffff"
-            android:id="@+id/password" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="手机号码"
-            android:layout_marginLeft="10dp"
-            android:textColor="#ffffff"
-            android:textSize="24sp"/>
-        <EditText
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:background="#ffffff"
-            android:id="@+id/phonenumber" />
-    </LinearLayout>
-    <Button
-        android:layout_width="90dp"
+    <EditText
+        android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="250dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/account"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/zhanghao2"
+        android:hint="用户名"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/mima5"
+        android:hint="  6-20位字母、数字和字符"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:maxEms="20"
+        android:minEms="6" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/mima5"
+        android:hint="手机号码"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:text="注册"
-        android:textSize="24sp"
-        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:background="#f59129"
         android:id="@+id/regest" />
 </LinearLayout>
