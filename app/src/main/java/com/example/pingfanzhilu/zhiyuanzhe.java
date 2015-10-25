@@ -1,6 +1,7 @@
 package com.example.pingfanzhilu;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -33,7 +34,7 @@ public class zhiyuanzhe extends Activity {
 
 
     public void loadDatas(){
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 10; i++) {
             Appinfos ai = new Appinfos();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
@@ -47,6 +48,12 @@ public class zhiyuanzhe extends Activity {
                 ai.setImages(R.drawable.zhuye1);
             }else if(i == 6){
                 ai.setImages(R.drawable.zhuye1);
+            }else if(i == 7){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 8){
+                ai.setImages(R.drawable.zhuye1);
+            }else if(i == 9){
+                ai.setImages(R.drawable.zhuye1);
             }
             ai.setText_id("001");
             ai.setText_infos("这是我们都需要注意的...");
@@ -54,4 +61,5 @@ public class zhiyuanzhe extends Activity {
             appInfos.add(ai);
         }
     }
+
 }
