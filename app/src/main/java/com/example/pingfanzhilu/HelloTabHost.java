@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class HelloTabHost extends Activity {
     private Context context;
-    private ListView listView;
+    private ListView listView2,listView3,listView4,listView5;
     private ArrayList<Appinfos> appInfos;
     private AppAdapter appAdapter;
 
@@ -22,49 +22,193 @@ public class HelloTabHost extends Activity {
         TabHost th=(TabHost)findViewById(R.id.tabhost);
         th.setup();            //初始化TabHost容器
 
-        getComponenets();
+        getComponenets1();//推荐商品
+        getComponenets2();//爱心数码
+        getComponenets3();//爱心生活
+        getComponenets4();//爱心超市
+
 
 
         //在TabHost创建标签，然后设置：标题／图标／标签页布局
-        th.addTab(th.newTabSpec("tab1").setIndicator("推荐商品",this.getResources().getDrawable(R.drawable.fanhui2)).setContent(R.id.tab1));
-        th.addTab(th.newTabSpec("tab2").setIndicator("家用电器",null).setContent(R.id.tab2));
-        th.addTab(th.newTabSpec("tab3").setIndicator("手机数码", null).setContent(R.id.tab3));
-        th.addTab(th.newTabSpec("tab4").setIndicator("电脑办公", null).setContent(R.id.tab4));
+        th.addTab(th.newTabSpec("tab1").setIndicator("推荐商品", this.getResources().getDrawable(R.drawable.jifen)).setContent(R.id.tab1));
+        th.addTab(th.newTabSpec("tab2").setIndicator("爱心数码",null).setContent(R.id.tab2));
+        th.addTab(th.newTabSpec("tab3").setIndicator("爱心生活", null).setContent(R.id.tab3));
+        th.addTab(th.newTabSpec("tab4").setIndicator("爱心超市", null).setContent(R.id.tab4));
 
         //上面的null可以为getResources().getDrawable(R.drawable.图片名)设置图标
 
     }
-    public void getComponenets(){
+    //推荐商品
+    public void getComponenets1(){
         this.context = this;
-        listView = (ListView) findViewById(R.id.listView3);
+        listView2 = (ListView) findViewById(R.id.listView2);
         appInfos = new ArrayList<Appinfos>();
-        loadDatas();
+        loadDatas1();
         appAdapter = new AppAdapter(context,appInfos);
-        listView.setAdapter(appAdapter);
+        listView2.setAdapter(appAdapter);
+
     }
 
 
-    public void loadDatas(){
-        for (int i = 0; i < 10; i++) {
+    public void loadDatas1(){
+        for (int i = 1; i < 7; i++) {
             Appinfos ai = new Appinfos();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("001");
+
+
             }else if(i == 2){
                 ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("002");
             }else if(i == 3){
                 ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("003");
             }else if(i == 4){
                 ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("004");
             }else if(i == 5){
                 ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("005");
             }else if(i == 6){
                 ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("006");
             }
-            ai.setText_id("001");
+            //ai.setText_id("001");
             ai.setText_infos("这是我们都需要注意的...");
             ai.setText_url("http://jiangshide.com");
             appInfos.add(ai);
         }
+
+    }
+    //爱心数码
+    public void getComponenets2(){
+        this.context = this;
+        listView3 = (ListView) findViewById(R.id.listView3);
+        appInfos = new ArrayList<Appinfos>();
+        loadDatas2();
+        appAdapter = new AppAdapter(context,appInfos);
+        listView3.setAdapter(appAdapter);
+
+    }
+
+
+    public void loadDatas2(){
+        for (int i = 1; i < 7; i++) {
+            Appinfos ai = new Appinfos();
+            if(i == 1){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("007");
+
+
+            }else if(i == 2){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("008");
+            }else if(i == 3){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("009");
+            }else if(i == 4){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("007");
+            }else if(i == 5){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("005");
+            }else if(i == 6){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("006");
+            }
+            //ai.setText_id("001");
+            ai.setText_infos("这是我们都需要注意的...");
+            ai.setText_url("http://jiangshide.com");
+            appInfos.add(ai);
+        }
+
+    }
+    //爱心生活
+    public void getComponenets3(){
+        this.context = this;
+        listView4 = (ListView) findViewById(R.id.listView4);
+        appInfos = new ArrayList<Appinfos>();
+        loadDatas3();
+        appAdapter = new AppAdapter(context,appInfos);
+        listView4.setAdapter(appAdapter);
+
+    }
+
+
+    public void loadDatas3(){
+        for (int i = 1; i < 7; i++) {
+            Appinfos ai = new Appinfos();
+            if(i == 1){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("081");
+
+
+            }else if(i == 2){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("002");
+            }else if(i == 3){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("003");
+            }else if(i == 4){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("004");
+            }else if(i == 5){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("005");
+            }else if(i == 6){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("006");
+            }
+            //ai.setText_id("001");
+            ai.setText_infos("这是我们都需要注意的...");
+            ai.setText_url("http://jiangshide.com");
+            appInfos.add(ai);
+        }
+
+    }
+    //爱心超市
+    public void getComponenets4(){
+        this.context = this;
+        listView5 = (ListView) findViewById(R.id.listView5);
+        appInfos = new ArrayList<Appinfos>();
+        loadDatas4();
+        appAdapter = new AppAdapter(context,appInfos);
+        listView5.setAdapter(appAdapter);
+
+    }
+
+
+    public void loadDatas4(){
+        for (int i = 1; i < 7; i++) {
+            Appinfos ai = new Appinfos();
+            if(i == 1){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("101");
+
+
+            }else if(i == 2){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("002");
+            }else if(i == 3){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("003");
+            }else if(i == 4){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("004");
+            }else if(i == 5){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("005");
+            }else if(i == 6){
+                ai.setImages(R.drawable.zhuye1);
+                ai.setText_id("006");
+            }
+            //ai.setText_id("001");
+            ai.setText_infos("这是我们都需要注意的...");
+            ai.setText_url("http://jiangshide.com");
+            appInfos.add(ai);
+        }
+
     }
 
     /**
