@@ -10,6 +10,7 @@ public class Appinfos
     private String text_infos;
     private String text_url;
 
+
     public int getImages() {
         return images;
     }

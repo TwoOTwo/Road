@@ -35,4 +35,11 @@
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="报名"
+        android:id="@+id/button3"
+        android:layout_marginTop="15dp" />
+
 </LinearLayout>
