@@ -1,22 +1,20 @@
 package com.example.pingfanzhilu;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.support.v7.app.AlertDialog;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import model.vulunteerevent;
 
 
 public class AppAdapter extends BaseAdapter {
 
     private Context mContext;
-    private ArrayList<Appinfos> appInfos;
+    private ArrayList<vulunteerevent> appInfos;
 //    private LayoutInflater layoutInflater;
 //    public final class ListItemView{
 //        public ImageView image;
@@ -31,7 +29,7 @@ public class AppAdapter extends BaseAdapter {
         this.mContext = c;
     }
 
-    public AppAdapter(Context c,ArrayList<Appinfos> appInfos) {
+    public AppAdapter(Context c, ArrayList<vulunteerevent> appInfos) {
         this.mContext = c;
 //        layoutInflater = LayoutInflater.from(c);
         this.appInfos = appInfos;
@@ -54,7 +52,7 @@ public class AppAdapter extends BaseAdapter {
      */
     public View getView(final int position, View convertView, ViewGroup parent) {
 //        ListItemView listItemView = null;
-
+//        final  int selectID = position;
         if(appInfos == null){
             return null;
         }
@@ -85,10 +83,10 @@ public class AppAdapter extends BaseAdapter {
     }
 
 
-//    private void showDetailInfo(int clickID)
-//    {
-//        new AlertDialog.Builder(mContext).setTitle("详情："+appInfos.get(clickID).getText_id()).setMessage(appInfos.get(clickID).getText_infos().toString()).setPositiveButton("确定", null).show();
-//    }
+    public  void showDetailInfo(int clickID)
+    {
+        new AlertDialog.Builder(mContext).setTitle("详情："+appInfos.get(clickID).getText_id()).setMessage(appInfos.get(clickID).getText_infos().toString()).setPositiveButton("确定", null).show();
+    }
 }
 
 

@@ -8,10 +8,12 @@ import android.widget.TabHost;
 
 import java.util.ArrayList;
 
+import model.vulunteerevent;
+
 public class HelloTabHost extends Activity {
     private Context context;
     private ListView listView2,listView3,listView4,listView5;
-    private ArrayList<Appinfos> appInfos;
+    private ArrayList<vulunteerevent> appInfos;
     private AppAdapter appAdapter;
 
     @Override
@@ -42,7 +44,7 @@ public class HelloTabHost extends Activity {
     public void getComponenets1(){
         this.context = this;
         listView2 = (ListView) findViewById(R.id.listView2);
-        appInfos = new ArrayList<Appinfos>();
+        appInfos = new ArrayList<vulunteerevent>();
         loadDatas1();
         appAdapter = new AppAdapter(context,appInfos);
         listView2.setAdapter(appAdapter);
@@ -52,7 +54,7 @@ public class HelloTabHost extends Activity {
 
     public void loadDatas1(){
         for (int i = 1; i < 7; i++) {
-            Appinfos ai = new Appinfos();
+            vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("001");
@@ -85,7 +87,7 @@ public class HelloTabHost extends Activity {
     public void getComponenets2(){
         this.context = this;
         listView3 = (ListView) findViewById(R.id.listView3);
-        appInfos = new ArrayList<Appinfos>();
+        appInfos = new ArrayList<vulunteerevent>();
         loadDatas2();
         appAdapter = new AppAdapter(context,appInfos);
         listView3.setAdapter(appAdapter);
@@ -95,7 +97,7 @@ public class HelloTabHost extends Activity {
 
     public void loadDatas2(){
         for (int i = 1; i < 7; i++) {
-            Appinfos ai = new Appinfos();
+            vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("007");
@@ -128,7 +130,7 @@ public class HelloTabHost extends Activity {
     public void getComponenets3(){
         this.context = this;
         listView4 = (ListView) findViewById(R.id.listView4);
-        appInfos = new ArrayList<Appinfos>();
+        appInfos = new ArrayList<vulunteerevent>();
         loadDatas3();
         appAdapter = new AppAdapter(context,appInfos);
         listView4.setAdapter(appAdapter);
@@ -138,7 +140,7 @@ public class HelloTabHost extends Activity {
 
     public void loadDatas3(){
         for (int i = 1; i < 7; i++) {
-            Appinfos ai = new Appinfos();
+            vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("081");
@@ -171,7 +173,7 @@ public class HelloTabHost extends Activity {
     public void getComponenets4(){
         this.context = this;
         listView5 = (ListView) findViewById(R.id.listView5);
-        appInfos = new ArrayList<Appinfos>();
+        appInfos = new ArrayList<vulunteerevent>();
         loadDatas4();
         appAdapter = new AppAdapter(context,appInfos);
         listView5.setAdapter(appAdapter);
@@ -181,7 +183,7 @@ public class HelloTabHost extends Activity {
 
     public void loadDatas4(){
         for (int i = 1; i < 7; i++) {
-            Appinfos ai = new Appinfos();
+            vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("101");

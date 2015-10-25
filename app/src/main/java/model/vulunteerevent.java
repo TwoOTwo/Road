@@ -1,9 +1,9 @@
-package com.example.pingfanzhilu;
+package model;
 
 /**
  * Created by Hua on 2015/10/18.
  */
-public class Appinfos
+public class vulunteerevent
 {
     private int images;
     private String text_id;

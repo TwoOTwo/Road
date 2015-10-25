@@ -7,6 +7,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import model.vulunteerevent;
+
 /**
  * Created by 杨~ on 2015/10/14.
  */
@@ -14,7 +16,7 @@ import java.util.ArrayList;
 public class aiqiuzhu extends Activity {
     private Context mContext;
     private ListView listView;
-    private ArrayList<Appinfos> appInfos;
+    private ArrayList<vulunteerevent> appInfos;
     private AppAdapter appAdapter;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,7 @@ public class aiqiuzhu extends Activity {
     public void getComponenets(){
         this.mContext = this;
         listView = (ListView) findViewById(R.id.listView);
-        appInfos = new ArrayList<Appinfos>();
+        appInfos = new ArrayList<vulunteerevent>();
         loadDatas();
         appAdapter = new AppAdapter(mContext,appInfos);
         listView.setAdapter(appAdapter);
@@ -39,7 +41,7 @@ public class aiqiuzhu extends Activity {
      */
     public void loadDatas(){
         for (int i = 0; i < 10; i++) {
-            Appinfos ai = new Appinfos();
+            vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
             }else if(i == 2){
