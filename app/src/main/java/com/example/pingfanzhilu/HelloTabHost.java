@@ -185,7 +185,7 @@ public class HelloTabHost extends Activity {
         for (int i = 1; i < 7; i++) {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
-                ai.setImages(R.drawable.zhuye1);
+                ai.setImages(R.drawable.chaoshi1_1);
                 ai.setText_id("101");
 
 

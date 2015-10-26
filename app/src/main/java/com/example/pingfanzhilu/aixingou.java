@@ -20,6 +20,7 @@ public class aixingou extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aixingouactivity);
         getComponenets();
+
     }
 
 
