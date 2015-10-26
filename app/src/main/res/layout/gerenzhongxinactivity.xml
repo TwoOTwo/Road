@@ -6,10 +6,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
-        <com.example.pingfanzhilu.dingbulan
+        <com.example.pingfanzhilu.dingbulan1
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        </com.example.pingfanzhilu.dingbulan>
+        </com.example.pingfanzhilu.dingbulan1>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -28,7 +28,8 @@
            android:layout_marginLeft="10dp"
            android:layout_width="70dp"
            android:layout_height="70dp"
-           android:background="@drawable/shili"/>
+           android:id="@+id/photo" />
+           <!--android:background="@drawable/  "/>-->
         <Button
             android:layout_width="50dp"
             android:layout_height="30dp"

@@ -40,6 +40,7 @@ public class zhuce extends Activity {
                 user.setIntegral(0);
                 user.setThelength(0);
                 user.setWelfareid(0);
+                user.setPhotoaddress("shili");
 
                 welfareDB.saveUser(user);
                 Intent intent13 = new Intent(zhuce.this,gerenzhongxin.class);

@@ -15,6 +15,7 @@ public class PublicWelfareOpenHelper extends SQLiteOpenHelper
             +"phonenumber text,"
             +"integral integer,"
             +"thelength integer,"
+            +"photoaddress text,"
             +"welfareeventId integer)";
     public static final String Create_Welfare ="create table Event("+"id integer primary key autoincrement,"
             +"publicevent text,"

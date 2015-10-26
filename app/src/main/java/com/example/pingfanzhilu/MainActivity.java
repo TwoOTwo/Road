@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -19,11 +20,15 @@ import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import model.User;
+
 public class MainActivity extends Activity {
     private TabHost tabs;
     private ImageButton zhuye;
     private ImageButton faxian;
     private ImageButton sousuo;
+
+    private User user;
 
     private EditText editText;
     private Button submit1;
@@ -31,7 +36,7 @@ public class MainActivity extends Activity {
     private TextView tips;
     private WebSettings webSettings;
     private Handler handler = new Handler();
-
+//    private User user;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +66,16 @@ public class MainActivity extends Activity {
         tab2.setIndicator(faxian);
         tab2.setContent(R.id.text2);
         tabs.addTab(tab2);
+
+        //获得从登陆传来的数据
+//        user = new User();
+//        user = (User)getIntent().getSerializableExtra("user_data");
+//        LayoutInflater layoutInflater = this.getLayoutInflater();
+//        View view = layoutInflater.inflate(R.layout.gerenzhongxinactivity,null);
+//        TextView jifen = (TextView)view.findViewById(R.id.jifen);
+//        TextView time = (TextView)view.findViewById(R.id.time);
+//        jifen.setText(String.valueOf(user.getIntegral()));
+//        time.setText(String.valueOf(user.getThelength()));
 
 
         //设置Tab3

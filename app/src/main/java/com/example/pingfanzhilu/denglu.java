@@ -2,6 +2,7 @@ package com.example.pingfanzhilu;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -45,6 +46,7 @@ public class denglu extends Activity {
                {
                    String account1= editText1.getText().toString();
                    String password1 = editText2.getText().toString();
+
                    for (User user : userList)
                    {
 
@@ -54,6 +56,7 @@ public class denglu extends Activity {
                            Intent intent13 = new Intent(denglu.this, gerenzhongxin.class);
                            intent13.putExtra("user_data", user);
                            startActivity(intent13);
+
                       }
 
                     }

@@ -8,11 +8,13 @@ public class User implements Serializable
     private String account;
     private String password;
     private String phonenumber;
+    private String photoaddress;
     private int integral;
     private int thelength;
     private int welfareid;
 
-   public int getId()
+
+    public int getId()
     {
         return id;
     }
@@ -38,6 +40,10 @@ public class User implements Serializable
     public int getWelfareid()
     {
         return welfareid;
+    }
+    public String getPhotoaddress()
+    {
+        return photoaddress;
     }
     public void setId(int id)
     {
@@ -66,5 +72,9 @@ public class User implements Serializable
     public void setWelfareid(int welfareid)
     {
         this.welfareid = welfareid;
+    }
+    public void setPhotoaddress(String photoaddress)
+    {
+        this.photoaddress=photoaddress;
     }
 }

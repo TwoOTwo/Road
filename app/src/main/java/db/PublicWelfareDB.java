@@ -36,6 +36,11 @@ public class PublicWelfareDB {
             ContentValues values = new ContentValues();
             values.put("account", user.getAccount());
             values.put("password", user.getPassword());
+            values.put("phonenumber",user.getPhonenumber());
+            values.put("integral",user.getIntegral());
+            values.put("thelength",user.getThelength());
+            values.put("welfareid",user.getWelfareid());
+            values.put("photoaddress",user.getPhotoaddress());
             db.insert("USER", null, values);
         }
     }
