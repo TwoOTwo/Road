@@ -3,6 +3,10 @@ package com.example.pingfanzhilu;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TabHost;
 
@@ -38,9 +42,56 @@ public class HelloTabHost extends Activity {
         th.addTab(th.newTabSpec("tab4").setIndicator("爱心超市", null).setContent(R.id.tab4));
 
         //上面的null可以为getResources().getDrawable(R.drawable.图片名)设置图标
-
+//
+//        //绑定Layout中的LsitVIew
+//        ListView list = (ListView)findViewById(R.id.listView01);
+//        //生成动态数组，加入数据
+//        ArrayList<HashMap<String,Object>> listItem = new ArrayList<HashMap<String, Object>>();
+//        for(int i=0;i<7;i++)
+//        {
+//            HashMap<String , Object> map = new HashMap<String , Object>();
+//            map.put("ItemImage",R.drawable.shoucang6);
+//            map.put("ItemTitle","Level"+1);
+//            map.put("ItemText","Finish in 1 Min 54 Secs , 70 Moves");
+//            listItem.add(map);
+//
+//        }
+//        //生成适配器的Item和动态数组对应的元素
+//        SimpleAdapter listItemAdapter = new SimpleAdapter(this,listItem,   //数据源
+//                R.layout.list_items,                                      //ListItem的XML实现
+//                new String[]{"Itemimage ","ItemTitle","ItemText"},     //动态数组与Item对应的子项
+//                new int[]{R.id.ItemImage,R.id.ItemTitle,R.id.ItemText}  //IamgeItem的XML文件中有一个ImageView，两个TextView id
+//                );
+//        //添加并显示
+//        list.setAdapter(listItemAdapter);
+//        //添加点击
+//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView <?> arg0,View arg1,int arg2,long arg3) {
+//                setTitle("单击了" +arg2 +"个项目");
+//            }
+//        });
+//        //添加长按点击
+//        listView2.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+//            @Override
+//            public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+//                menu.setHeaderTitle("长按菜单-Context");
+//                menu.add(0,0,0,"弹出长按菜单");
+//                menu.add(0,2,0,"弹出长按菜单1");
+//
+//            }
+//        });
     }
-    //推荐商品
+//        //长按菜单相应函数
+//    public boolean onContextItemSelectd(MenuItem item){
+//        setTitle("单击了长按菜单里面的第"+item.getItemId()+"个项目");
+//        return super.onContextItemSelected(item);
+//
+// }
+
+//
+//
+//    //推荐商品
     public void getComponenets1(){
         this.context = this;
         listView2 = (ListView) findViewById(R.id.listView2);
@@ -49,7 +100,31 @@ public class HelloTabHost extends Activity {
         appAdapter = new AppAdapter(context,appInfos);
         listView2.setAdapter(appAdapter);
 
+        //        //添加点击
+        listView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0,View arg1,int arg2,long arg3) {
+                setTitle("单击了" +arg2 +"个项目");
+            }
+        });
+        listView2.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+            @Override
+            public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                menu.setHeaderTitle("长按菜单-Context");
+                menu.add(0,0,0,"弹出长按菜单");
+                menu.add(0,2,0,"弹出长按菜单1");
+
+            }
+        });
+
+
     }
+            //长按菜单相应函数
+    public boolean onContextItemSelectd(MenuItem item){
+        setTitle("单击了长按菜单里面的第"+item.getItemId()+"个项目");
+        return super.onContextItemSelected(item);
+
+ }
 
 
     public void loadDatas1(){
@@ -83,6 +158,8 @@ public class HelloTabHost extends Activity {
         }
 
     }
+
+
     //爱心数码
     public void getComponenets2(){
         this.context = this;
