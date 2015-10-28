@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.pingfanzhilu.dingbulan
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.pingfanzhilu.dingbulan>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="爱心购"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- 第一个tab的布局 -->
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.example.pingfanzhilu.SlideShowView
+                        android:id="@+id/slideshowView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView2"
+                        android:layout_gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <!-- 第二个tab的布局 -->
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.example.pingfanzhilu.SlideShowView
+                        android:id="@+id/slideshowView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView3"
+                        android:layout_gravity="center_horizontal" />
+
+                    <!--<AnalogClock-->
+                        <!--android:id="@+id/widget36"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content">-->
+                    <!--</AnalogClock>-->
+
+
+                </LinearLayout>
+
+                <!-- 第三个tab的布局 -->
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.example.pingfanzhilu.SlideShowView
+                        android:id="@+id/slideshowView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView4"
+                        android:layout_gravity="center_horizontal" />
+
+
+                </LinearLayout>
+
+                <!-- 第四个tab的布局 -->
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.example.pingfanzhilu.SlideShowView
+                        android:id="@+id/slideshowView"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listView5"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

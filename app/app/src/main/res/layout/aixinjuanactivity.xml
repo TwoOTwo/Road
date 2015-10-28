@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.pingfanzhilu.dingbulan
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.pingfanzhilu.dingbulan>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="爱心捐"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/listView"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <!--定义一个 ImageSwitcher 控件 -->
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/switcher" />
+    <!--定义一个 Gallery 控件 -->
+    <Gallery
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/gallery"
+        android:layout_marginTop="25dp"
+        android:unselectedAlpha="0.6"
+        android:spacing="3pt"
+        android:background="#fff3aa" />
+
+</LinearLayout>
