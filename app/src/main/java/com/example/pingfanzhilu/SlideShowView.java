@@ -92,9 +92,9 @@ public  class SlideShowView extends FrameLayout {
         private void initData(){
             imagesResIds = new int[]{
                     R.drawable.ganendazhe,
-                    R.drawable.shoucang2,
-                    R.drawable.shoucang3,
-                    R.drawable.shoucang2,
+                    R.drawable.shoucang1,
+                    R.drawable.shoucang1,
+                    R.drawable.shoucang1,
                     R.drawable.shoucang1,
 
             };

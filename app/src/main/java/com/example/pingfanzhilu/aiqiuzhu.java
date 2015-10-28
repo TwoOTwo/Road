@@ -33,20 +33,20 @@ public class aiqiuzhu extends Activity {
     {
 
         R.drawable.shoucang1,
-        R.drawable.shoucang2,
-        R.drawable.shoucang3,
-        R.drawable.shoucang4,
-        R.drawable.shoucang5,
         R.drawable.shoucang1,
-        R.drawable.shoucang2,
-        R.drawable.shoucang3,
-        R.drawable.shoucang4,
-        R.drawable.shoucang5,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
+        R.drawable.shoucang1,
             R.drawable.shoucang1,
-            R.drawable.shoucang2,
-            R.drawable.shoucang3,
-            R.drawable.shoucang4,
-            R.drawable.shoucang5
+            R.drawable.shoucang1,
+            R.drawable.shoucang1,
+            R.drawable.shoucang1,
+            R.drawable.shoucang1
 
     };
 

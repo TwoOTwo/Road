@@ -50,13 +50,13 @@ public class AppAdapter extends BaseAdapter {
     /**
      * get view
      */
-    public View getView(final int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
 //        ListItemView listItemView = null;
 //        final  int selectID = position;
         if(appInfos == null){
             return null;
         }
-        if(convertView == null){
+//        if(convertView == null){
             AppView appView = new AppView(mContext);
             appView.updateView(appInfos.get(position));
             convertView = appView;
@@ -76,9 +76,9 @@ public class AppAdapter extends BaseAdapter {
 //                }
 //            });
 
-        }else{
-            ((AppView)convertView).updateView(appInfos.get(position));
-        }
+//        }else{
+//            ((AppView)convertView).updateView(appInfos.get(position));
+//        }
         return convertView;
     }
 

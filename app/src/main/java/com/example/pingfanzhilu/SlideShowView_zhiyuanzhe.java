@@ -91,10 +91,10 @@ public  class SlideShowView_zhiyuanzhe extends FrameLayout {
          */
         private void initData(){
             imagesResIds = new int[]{
-                    R.drawable.shoucang5,
-                    R.drawable.shoucang2,
-                    R.drawable.shoucang3,
-                    R.drawable.shoucang2,
+                    R.drawable.shoucang1,
+                    R.drawable.shoucang1,
+                    R.drawable.shoucang1,
+                    R.drawable.shoucang1,
                     R.drawable.shoucang1,
 
             };

@@ -3,10 +3,6 @@ package com.example.pingfanzhilu;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TabHost;
 
@@ -100,32 +96,8 @@ public class HelloTabHost extends Activity {
         appAdapter = new AppAdapter(context,appInfos);
         listView2.setAdapter(appAdapter);
 
-        //        //添加点击
-        listView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> arg0,View arg1,int arg2,long arg3) {
-                setTitle("单击了" +arg2 +"个项目");
-            }
-        });
-        listView2.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
-            @Override
-            public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-                menu.setHeaderTitle("长按菜单-Context");
-                menu.add(0,0,0,"弹出长按菜单");
-                menu.add(0,2,0,"弹出长按菜单1");
-
-            }
-        });
-
 
     }
-            //长按菜单相应函数
-    public boolean onContextItemSelectd(MenuItem item){
-        setTitle("单击了长按菜单里面的第"+item.getItemId()+"个项目");
-        return super.onContextItemSelected(item);
-
- }
-
 
     public void loadDatas1(){
         for (int i = 1; i < 7; i++) {
@@ -188,38 +160,38 @@ public class HelloTabHost extends Activity {
         for (int i = 1; i < 7; i++) {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
-                ai.setImages(R.drawable.shuma1);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
 
 
             }else if(i == 2){
-                ai.setImages(R.drawable.shuma3);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
 
             }else if(i == 3){
-                ai.setImages(R.drawable.shuma4);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
 
             }else if(i == 4){
-                ai.setImages(R.drawable.shuma5);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
 
             }else if(i == 5){
-                ai.setImages(R.drawable.shuma6);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
 
             }else if(i == 6){
-                ai.setImages(R.drawable.shuma7);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
@@ -272,7 +244,7 @@ public class HelloTabHost extends Activity {
                 ai.setText_url("商品折扣：");
 
             }else if(i == 5){
-                ai.setImages(R.drawable.zhuye1);
+                ai.setImages(R.drawable.chaoshi1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
@@ -306,7 +278,7 @@ public class HelloTabHost extends Activity {
         for (int i = 1; i < 7; i++) {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
-                ai.setImages(R.drawable.chaoshi1_1);
+                ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("商品名称：");
                 ai.setText_infos("商品价格：");
                 ai.setText_url("商品折扣：");
