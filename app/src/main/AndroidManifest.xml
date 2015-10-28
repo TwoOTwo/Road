@@ -56,7 +56,7 @@
         <activity android:name=".aixinluntan" >
         </activity>
 
-        <activity android:name=".hezuojigou$wangqitupian" >
+        <activity android:name=".wangqitupian" >
         </activity>
 
         <activity android:name=".gerenzhongxin" >
@@ -83,6 +83,16 @@
         <activity android:name=".MyListView3">
         </activity>
 
+        <activity android:name=".wqtp1">
+        </activity>
+        <activity android:name=".wqtp2">
+        </activity>
+        <activity android:name=".wqtp3">
+        </activity>
+        <activity android:name=".wqtp4">
+        </activity>
+        <activity android:name=".yibaoming">
+        </activity>
     </application>
 
 </manifest>

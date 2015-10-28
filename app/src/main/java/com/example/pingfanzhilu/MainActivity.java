@@ -226,7 +226,7 @@ public class MainActivity extends Activity {
             ImageButton wangqitupian = (ImageButton) findViewById(R.id.ibu16);
             wangqitupian.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent intent10 = new Intent(MainActivity.this, com.example.pingfanzhilu.hezuojigou.wangqitupian.class);
+                    Intent intent10 = new Intent(MainActivity.this, com.example.pingfanzhilu.wangqitupian.class);
                     startActivity(intent10);
                 }
             });

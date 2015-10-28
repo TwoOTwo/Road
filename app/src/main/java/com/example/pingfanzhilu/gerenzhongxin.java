@@ -77,6 +77,40 @@ public class gerenzhongxin extends Activity {
                 startActivity(intent);
             }
         });
+        ImageView imv1 = (ImageView) findViewById(R.id.imageView);
+        imv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(gerenzhongxin.this, yibaoming.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imv2 = (ImageView) findViewById(R.id.imageView2);
+        imv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(gerenzhongxin.this, yibaoming.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imv3 = (ImageView) findViewById(R.id.imageView3);
+        imv3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(gerenzhongxin.this, yibaoming.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imv4 = (ImageView) findViewById(R.id.imageView4);
+        imv4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(gerenzhongxin.this, yibaoming.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 
 }
