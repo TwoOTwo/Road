@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sousuo"
+    android:id="@+id/text3"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="搜索"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:background="#f59129" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我公益->我快乐"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#f59129"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入关键字"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/editText" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜一搜"
+        android:textSize="25sp"
+        android:textColor="#f59129"
+        android:background="#FFE0C0"
+        />
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:text="查询结果"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:typeface="sans"
+        />
+    <WebView
+        android:id="@+id/toutput"
+        android:layout_width="fill_parent"
+        android:layout_height="270px"
+        android:layout_below="@+id/tips"
+        android:visibility="invisible"
+        android:layout_weight="1.15" />
+
+
+</LinearLayout>

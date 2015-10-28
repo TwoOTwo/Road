@@ -10,22 +10,24 @@ import java.util.ArrayList;
 import model.vulunteerevent;
 
 
+public class aixingou extends Activity{
 
-public class aixinjuan extends Activity {
     private Context mContext;
     private ListView listView;
     private ArrayList<vulunteerevent> appInfos;
     private AppAdapter appAdapter;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aixinjuanactivity);
+        setContentView(R.layout.aixingouactivity);
         getComponenets();
+
     }
 
 
     /**
      * componenet
      */
+
     public void getComponenets(){
         this.mContext = this;
         listView = (ListView) findViewById(R.id.listView);
@@ -35,9 +37,7 @@ public class aixinjuan extends Activity {
         listView.setAdapter(appAdapter);
     }
 
-    /**
-     * load datas
-     */
+
     public void loadDatas(){
         for (int i = 0; i < 10; i++) {
             vulunteerevent ai = new vulunteerevent();
@@ -60,4 +60,5 @@ public class aixinjuan extends Activity {
             appInfos.add(ai);
         }
     }
+
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffc0"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.example.pingfanzhilu.dingbulan
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.pingfanzhilu.dingbulan>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="注册"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/account"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/zhanghao2"
+        android:hint="用户名"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/mima5"
+        android:hint="  6-20位字母、数字和字符"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:maxEms="20"
+        android:minEms="6" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/shouji"
+        android:hint="手机号码"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <Button
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:background="#f59129"
+        android:id="@+id/regest" />
+</LinearLayout>

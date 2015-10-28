@@ -9,19 +9,19 @@ import java.util.ArrayList;
 
 import model.vulunteerevent;
 
-
-
-public class aixinjuan extends Activity {
+/**
+ * Created by 杨~ on 2015/10/15.
+ */
+public class aixinluntan extends Activity {
     private Context mContext;
     private ListView listView;
     private ArrayList<vulunteerevent> appInfos;
     private AppAdapter appAdapter;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aixinjuanactivity);
+        setContentView(R.layout.aixinluntanactivity);
         getComponenets();
     }
-
 
     /**
      * componenet

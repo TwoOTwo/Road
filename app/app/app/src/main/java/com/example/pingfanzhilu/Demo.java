@@ -5,23 +5,27 @@ import android.content.Context;
 import android.os.Bundle;
 import android.widget.ListView;
 
+
 import java.util.ArrayList;
 
 import model.vulunteerevent;
 
+/**
+ * Created by Hua on 2015/10/18.
+ */
+public class Demo extends Activity {
 
-
-public class aixinjuan extends Activity {
     private Context mContext;
     private ListView listView;
     private ArrayList<vulunteerevent> appInfos;
     private AppAdapter appAdapter;
-    public void onCreate(Bundle savedInstanceState) {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aixinjuanactivity);
+        setContentView(R.layout.aihuodong1);
         getComponenets();
     }
-
 
     /**
      * componenet

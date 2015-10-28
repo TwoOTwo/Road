@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp">
+        <com.example.pingfanzhilu.dingbulan
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.pingfanzhilu.dingbulan>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="志愿者项目招募"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical">
+
+        <com.example.pingfanzhilu.SlideShowView_zhiyuanzhe
+            android:id="@+id/slideshowView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
