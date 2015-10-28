@@ -25,6 +25,23 @@
             android:layout_below="@+id/view2">
 
         </WebView>
+
+
+
     </RelativeLayout>
+    <!--&lt;!&ndash;定义一个 ImageSwitcher 控件 &ndash;&gt;-->
+    <!--<ImageSwitcher-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="320dp"-->
+        <!--android:id="@+id/switcher" />-->
+    <!--&lt;!&ndash;定义一个 Gallery 控件 &ndash;&gt;-->
+    <!--<Gallery-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:id="@+id/gallery"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:unselectedAlpha="0.6"-->
+        <!--android:spacing="3pt"-->
+        <!--android:background="#fff3aa" />-->
 
 </LinearLayout>

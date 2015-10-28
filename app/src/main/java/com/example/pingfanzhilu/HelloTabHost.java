@@ -132,28 +132,40 @@ public class HelloTabHost extends Activity {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("001");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
 
 
             }else if(i == 2){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("002");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 3){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("003");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
             }else if(i == 4){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("004");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
             }else if(i == 5){
                 ai.setImages(R.drawable.zhuye1);
                 ai.setText_id("005");
+                ai.setText_infos("这是我们都需要注意的...");
+                ai.setText_url("http://jiangshide.com");
             }else if(i == 6){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("006");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
             }
             //ai.setText_id("001");
-            ai.setText_infos("这是我们都需要注意的...");
-            ai.setText_url("http://jiangshide.com");
+
             appInfos.add(ai);
         }
 
@@ -176,29 +188,45 @@ public class HelloTabHost extends Activity {
         for (int i = 1; i < 7; i++) {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
-                ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("007");
+                ai.setImages(R.drawable.shuma1);
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
 
 
             }else if(i == 2){
-                ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("008");
+                ai.setImages(R.drawable.shuma3);
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 3){
-                ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("009");
+                ai.setImages(R.drawable.shuma4);
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 4){
-                ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("007");
+                ai.setImages(R.drawable.shuma5);
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 5){
-                ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("005");
+                ai.setImages(R.drawable.shuma6);
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 6){
-                ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("006");
+                ai.setImages(R.drawable.shuma7);
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }
             //ai.setText_id("001");
-            ai.setText_infos("这是我们都需要注意的...");
-            ai.setText_url("http://jiangshide.com");
+
             appInfos.add(ai);
         }
 
@@ -220,28 +248,44 @@ public class HelloTabHost extends Activity {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("081");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
 
 
             }else if(i == 2){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("002");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 3){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("003");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 4){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("004");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 5){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("005");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 6){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("006");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }
             //ai.setText_id("001");
-            ai.setText_infos("这是我们都需要注意的...");
-            ai.setText_url("http://jiangshide.com");
+
             appInfos.add(ai);
         }
 
@@ -263,28 +307,45 @@ public class HelloTabHost extends Activity {
             vulunteerevent ai = new vulunteerevent();
             if(i == 1){
                 ai.setImages(R.drawable.chaoshi1_1);
-                ai.setText_id("101");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
 
 
             }else if(i == 2){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("002");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 3){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("003");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 4){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("004");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 5){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("005");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }else if(i == 6){
                 ai.setImages(R.drawable.zhuye1);
-                ai.setText_id("006");
+                ai.setText_id("商品名称：");
+                ai.setText_infos("商品价格：");
+                ai.setText_url("商品折扣：");
+
             }
             //ai.setText_id("001");
-            ai.setText_infos("这是我们都需要注意的...");
-            ai.setText_url("http://jiangshide.com");
+
             appInfos.add(ai);
         }
 
