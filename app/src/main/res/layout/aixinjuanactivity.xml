@@ -21,10 +21,24 @@
             />
     </RelativeLayout>
 
-    <ListView
-        android:id="@+id/listView"
+    <!--<ListView-->
+        <!--android:id="@+id/listView"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <!--定义一个 ImageSwitcher 控件 -->
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/switcher" />
+    <!--定义一个 Gallery 控件 -->
+    <Gallery
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="80dp"
+        android:id="@+id/gallery"
+        android:layout_marginTop="25dp"
+        android:unselectedAlpha="0.6"
+        android:spacing="3pt"
+        android:background="#fff3aa" />
 
 </LinearLayout>
