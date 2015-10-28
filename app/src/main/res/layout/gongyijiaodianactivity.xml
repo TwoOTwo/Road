@@ -5,11 +5,12 @@
     android:orientation="vertical">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         <com.example.pingfanzhilu.dingbulan
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/view3">
         </com.example.pingfanzhilu.dingbulan>
         <TextView
             android:layout_width="match_parent"
@@ -19,12 +20,15 @@
             android:textColor="#ffffff"
             android:textSize="24sp"
             />
+        <WebView
+            android:id="@+id/webview2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view3">
+
+        </WebView>
     </RelativeLayout>
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        />
 
 </LinearLayout>

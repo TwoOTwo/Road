@@ -16,7 +16,7 @@ public class aihuodong extends Activity {
 
         webview =(WebView)findViewById(R.id.webview);
         webview.getSettings().setJavaScriptEnabled(true);
-        webview.loadUrl("http://www.xingongyi.org/");
+        webview.loadUrl("http://www.xingongyi.org/activity/index.html");
         webview.setWebViewClient(new HelloWebViewClient());
     }
 

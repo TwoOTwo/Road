@@ -1,63 +1,41 @@
 package com.example.pingfanzhilu;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-
-import model.vulunteerevent;
+import android.view.KeyEvent;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 /**
  * Created by 杨~ on 2015/10/14.
  */
 public class gongyijiaodian extends Activity {
-    private Context mContext;
-    private ListView listView;
-    private ArrayList<vulunteerevent> appInfos;
-    private AppAdapter appAdapter;
+    private WebView webview;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gongyijiaodianactivity);
-        getComponenets();
+
+        webview =(WebView)findViewById(R.id.webview2);
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.loadUrl("http://www.xingongyi.org/index/newslist.html");
+        webview.setWebViewClient(new HelloWebViewClient());
+
+    }
+    public boolean onKeyDown(int keyCode,KeyEvent event){
+        if((keyCode == KeyEvent.KEYCODE_BACK)&&webview.canGoBack()){
+            webview.goBack();
+            return true;
+        }
+        return false;
     }
 
-    /**
-     * componenet
-     */
-    public void getComponenets(){
-        this.mContext = this;
-        listView = (ListView) findViewById(R.id.listView);
-        appInfos = new ArrayList<vulunteerevent>();
-        loadDatas();
-        appAdapter = new AppAdapter(mContext,appInfos);
-        listView.setAdapter(appAdapter);
-    }
-
-    /**
-     * load datas
-     */
-    public void loadDatas(){
-        for (int i = 0; i < 10; i++) {
-            vulunteerevent ai = new vulunteerevent();
-            if(i == 1){
-                ai.setImages(R.drawable.zhuye1);
-            }else if(i == 2){
-                ai.setImages(R.drawable.zhuye1);
-            }else if(i == 3){
-                ai.setImages(R.drawable.zhuye1);
-            }else if(i == 4){
-                ai.setImages(R.drawable.zhuye1);
-            }else if(i == 5){
-                ai.setImages(R.drawable.zhuye1);
-            }else if(i == 6){
-                ai.setImages(R.drawable.zhuye1);
-            }
-            ai.setText_id("001");
-            ai.setText_infos("这是我们都需要注意的...");
-            ai.setText_url("http://jiangshide.com");
-            appInfos.add(ai);
+    private class HelloWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view,String url){
+            view.loadUrl(url);
+            return true;
         }
     }
+
+
 }
