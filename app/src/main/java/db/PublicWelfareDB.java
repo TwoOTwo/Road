@@ -13,7 +13,7 @@ import model.Event;
 import model.User;
 
 public class PublicWelfareDB {
-    public static final String DB_name = "welfare";
+    public static final String DB_name = "Publicwelfare";
     public static final int VERSION = 1;
     private static PublicWelfareDB welfareDB;
     private static SQLiteDatabase db;
@@ -39,7 +39,7 @@ public class PublicWelfareDB {
             values.put("phonenumber",user.getPhonenumber());
             values.put("integral",user.getIntegral());
             values.put("thelength",user.getThelength());
-            values.put("welfareid",user.getWelfareid());
+            values.put("welfareeventId",user.getWelfareid());
             values.put("photoaddress",user.getPhotoaddress());
             db.insert("USER", null, values);
         }
